@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>02 &mdash; AiChatBot</title>
+  </head>
+  <body>
+    <section class="section-sidebar">
+      <h1>CHAT BOT</h1>
+      <div class="buttons">
+        <button class="btn create-chat">
+          <span class="btn-title">New Chat</span>
+        </button>
+      </div>
+      <p class="sidebar-title">Chats</p>
+      <ul class="list">
+        <li class="list-item"><a href="">Example Chat 1</a></li>
+        <li class="list-item"><a href="">Example Chat 2</a></li>
+        <li class="list-item"><a href="">Example Chat 3</a></li>
+        <li class="list-item"><a href="">Example Chat 4</a></li>
+        <li class="list-item"><a href="">Example Chat 5</a></li>
+        <li class="list-item"><a href="">Example Chat 6</a></li>
+        <li class="list-item"><a href="">Example Chat 7</a></li>
+        <li class="list-item"><a href="">Example Chat 8</a></li>
+      </ul>
+    </section>
+    <section class="section-chat">
+      <h1 class="chat-title">What can I help with?</h1>
+      <form class="form">
+        <input
+          class="input-ask-anything"
+          id="input-new-chat"
+          type="text"
+          placeholder="Ask anything"
+          required
+        />
+        <button type="submit" id="submit">&UpArrow;</button>
+      </form>
+    </section>
+    <section class="section-active-chatting --chat-section hidden">
+      <div class="messages">
+        <p class="msg msg-user">Message from user</p>
+        <p class="msg msg-ai">Message from Ai</p>
+      </div>
+      <form class="form">
+        <input
+          class="input-ask-anything --chatting"
+          id="input-active-chat"
+          type="text"
+          placeholder="Ask anything"
+          required
+        />
+        <button type="submit" id="submit">&UpArrow;</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
