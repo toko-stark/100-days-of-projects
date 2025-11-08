@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #317dcf;
+  transition: background-color 0.2s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 5rem 0;
+  color: #eee;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 48px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: clamp(50vh, 70vh, 80vh);
+  width: clamp(500px, 40%, 60%);
+}
+
+.box {
+  height: clamp(100px, 200px, 220px);
+  width: clamp(100px, 200px, 220px);
+  border: 10px solid #000;
+  border-radius: 24px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.box.green {
+  justify-self: end;
+  align-self: end;
+  background-color: green;
+}
+
+.box.red {
+  justify-self: start;
+  align-self: end;
+  background-color: red;
+}
+
+.box.yellow {
+  justify-self: end;
+  align-self: start;
+  background-color: yellow;
+}
+
+.box.blue {
+  justify-self: start;
+  align-self: start;
+  background-color: blue;
+}
+
+.box.--blink {
+  box-shadow: 0 0 20px #eee;
+  filter: brightness(1.5);
+}
+
+.box:active {
+  opacity: 30%;
+}
+
+.box.disabled {
+  pointer-events: none;
+}
