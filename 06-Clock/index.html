@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="clock-wrap">
+      <section class="clock" aria-live="polite">
+        <div class="time" id="time" aria-label="Current time">
+          <span id="hours">12</span>
+          <span class="colon">:</span>
+          <span id="minutes">00</span>
+          <span class="colon">:</span>
+          <span id="seconds">00</span>
+          <span id="ampm" class="ampm">AM</span>
+        </div>
+
+        <div class="date" id="date" aria-label="Current date">
+          Monday, January 1, 2000
+        </div>
+
+        <div class="controls">
+          <label class="switch">
+            <input type="checkbox" id="formatToggle" />
+            <span class="slider"></span>
+          </label>
+          <span class="label">24-hour</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
