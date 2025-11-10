@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>07-RandomPasswordGenerator</title>
+  </head>
+  <body>
+    <main>
+      <section class="generate-section">
+        <input
+          class="password-input"
+          type="text"
+          placeholder="Generate a Password"
+          disabled
+        />
+        <div class="selection">
+          <div class="checkbox-group">
+            <h4>Character Types</h4>
+            <div class="checkbox">
+              <input type="checkbox" id="uppercase" checked />
+              <label for="uppercase">Include uppercase letters (A–Z)</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="lowercase" checked />
+              <label for="lowercase">Include lowercase letters (a–z)</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="numbers" checked />
+              <label for="numbers">Include numbers (0–9)</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="symbols" checked />
+              <label for="symbols">Include symbols (!@#$%^&*...)</label>
+            </div>
+            <div class="checkbox number-input">
+              <input
+                type="number"
+                id="length"
+                placeholder="Password Length"
+                value="12"
+                min="1"
+                max="20"
+              />
+              <label for="length">Password Length</label>
+            </div>
+          </div>
+          <button class="btn" id="btn">Generate Password</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
