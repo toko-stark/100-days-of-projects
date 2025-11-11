@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>07-LoginRegisterPage</title>
+  </head>
+  <body>
+    <main>
+      <section class="box">
+        <div class="form register-form-container">
+          <form class="register-form">
+            <h1>Sign Up</h1>
+            <input
+              id="register--input-name"
+              required
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              id="register--input-password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <input
+              id="register--input-email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="btn" id="sign-up">Sign Up</button>
+            <p class="message">
+              Already registered?
+              <a
+                href="#"
+                class="register"
+                onclick="if (this.classList.contains('register')) {
+                document.querySelector('.register-form-container').classList.toggle('hidden'); 
+                document.querySelector('.login-form-container').classList.toggle('hidden');
+                }"
+                >Sign In</a
+              >
+            </p>
+          </form>
+        </div>
+
+        <div class="form login-form-container hidden">
+          <form class="login-form">
+            <h1>Sign In</h1>
+            <input
+              id="login--input-user"
+              type="text"
+              placeholder="Email/Username"
+              required
+            />
+            <input
+              id="login--input-password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button class="btn" id="sign-in">Login</button>
+            <p class="message">
+              No account yet?
+              <a
+                href="#"
+                class="login"
+                onclick="if (this.classList.contains('login')) {
+                document.querySelector('.login-form-container').classList.toggle('hidden'); 
+                document.querySelector('.register-form-container').classList.toggle('hidden');
+                }"
+                >Register</a
+              >
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
