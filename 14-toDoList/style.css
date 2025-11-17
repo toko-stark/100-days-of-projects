@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-1: #0f172a;
+  --bg-2: #0b1220;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent-1: #22d3ee;
+  --accent-2: #a78bfa;
+  --success-1: #34d399;
+  --success-2: #059669;
+  --danger-1: #ef4444;
+  --danger-2: #b91c1c;
+  --card-1: #111827;
+  --card-2: #0b1628;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color-scheme: dark;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(
+      1200px 800px at 10% 0%,
+      rgba(34, 211, 238, 0.15),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 700px at 100% 100%,
+      rgba(167, 139, 250, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -0.4px;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 200ms ease,
+    filter 200ms ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px) saturate(140%);
+  -webkit-backdrop-filter: blur(6px) saturate(140%);
+}
+
+.container-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+
+.input-table {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#taskInput {
+  flex: 1;
+  width: auto;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--text);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(180deg, var(--card-1), var(--card-2));
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 0 rgba(0, 0, 0, 0);
+  transition: border-color 160ms ease, box-shadow 160ms ease,
+    background 200ms ease;
+  caret-color: var(--accent-1);
+}
+
+#taskInput::placeholder {
+  color: rgba(229, 231, 235, 0.5);
+}
+
+#taskInput:focus-visible {
+  border-color: rgba(34, 211, 238, 0.55);
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.18);
+}
+
+#addTaskButton {
+  padding: 12px 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(180deg, var(--success-1), var(--success-2));
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(5, 150, 105, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+#addTaskButton:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(5, 150, 105, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+#addTaskButton:active {
+  transform: translateY(0);
+  filter: brightness(0.98);
+}
+
+#addTaskButton:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.18),
+    0 10px 20px rgba(5, 150, 105, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+#taskList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.taskItem {
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(180deg, #1f2937, #0f172a);
+  padding: 12px 12px 12px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: transform 140ms ease, box-shadow 140ms ease,
+    border-color 140ms ease;
+}
+
+.taskItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
+  opacity: 0.9;
+}
+
+.taskItem:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.deleteButton {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(180deg, var(--danger-1), var(--danger-2));
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  box-shadow: 0 8px 18px rgba(185, 28, 28, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: transform 140ms ease, filter 200ms ease, box-shadow 140ms ease;
+}
+
+.deleteButton:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(185, 28, 28, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.deleteButton:active {
+  transform: translateY(0);
+  filter: brightness(0.98);
+}
+
+.deleteButton:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.22),
+    0 8px 18px rgba(185, 28, 28, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Small screens */
+@media (max-width: 520px) {
+  .container {
+    padding: 24px 18px;
+  }
+  .input-table {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #addTaskButton {
+    width: 100%;
+  }
+}
