@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #181818 0%, #222a38 50%, #151b22 100%);
+  color: #f5f7fa;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 780px;
+  width: 100%;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #6bc1ff, #b085ff 60%, #ffac7d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 2rem 2.25rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.55);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 15%,
+    rgba(255, 255, 255, 0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.info-box:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.65);
+}
+
+.info-box h2 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  color: #b7c7d9;
+  letter-spacing: 0.4px;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  letter-spacing: 0.3px;
+  color: #d9e2ec;
+}
+
+.info-box span {
+  font-family: 'SF Mono', 'Consolas', 'Roboto Mono', Menlo, monospace;
+  display: inline-block;
+  min-width: 110px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #273646, #1d2630);
+  border: 1px solid #354857;
+  color: #8dd0ff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transform: translateY(0);
+  opacity: 1;
+  transition: background 0.35s ease, transform 0.35s ease, color 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-6px) scale(0.95);
+  pointer-events: none;
+}
+
+span:not(.hidden) {
+  background: linear-gradient(145deg, #345065, #253440);
+  color: #e9f9ff;
+  border-color: #4d6b80;
+}
