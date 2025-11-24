@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>20-WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Weather App</h1>
+      <p>Get the latest weather updates for your location.</p>
+      <input
+        type="text"
+        name="location"
+        id="location"
+        placeholder="Enter location"
+      />
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+
+    <div class="box hidden">
+      <h2>Weather Details</h2>
+      <div class="informations">
+        <p id="weatherInfo">Berlin; 14C; Windy</p>
+      </div>
+      <button id="closeBtn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
