@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24-GuessTheWord</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h2 class="game-title">Guess The Word</h2>
+    <div class="game-container">
+      <div class="letter-list"></div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          class="word-input"
+          id="word-input"
+          maxlength="5"
+          placeholder="Enter a 5-letter word"
+        />
+        <button class="submit-button" id="submit-button">Submit</button>
+      </div>
+      <div class="correctGuessed">
+        <span class="guessed-letter letter-1">_</span
+        ><span class="guessed-letter letter-2">_</span
+        ><span class="guessed-letter letter-3">_</span
+        ><span class="guessed-letter letter-4">_</span
+        ><span class="guessed-letter letter-5">_</span>
+      </div>
+      <button class="reset-button" id="reset-button">Reset Game</button>
+    </div>
+  </body>
+</html>
