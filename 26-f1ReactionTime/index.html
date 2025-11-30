@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>26 - ReactionTime</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">F1 Reaction Time</h1>
+        <span class="badge">Practice mode</span>
+      </div>
+
+      <p class="desc">Wait for green, then click the box as fast as you can.</p>
+
+      <div id="box" class="ready">
+        <div id="message">Waiting for green…</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Best</div>
+          <div class="value" id="best">—</div>
+        </div>
+        <div class="stat">
+          <div class="label">Last</div>
+          <div class="value" id="last">—</div>
+        </div>
+        <div class="stat">
+          <div class="label">Average</div>
+          <div class="value" id="avg">—</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="button primary" id="start">Start</button>
+        <button class="button" id="reset">Reset Stats</button>
+      </div>
+    </div>
+    <script src="script.js "></script>
+  </body>
+</html>
