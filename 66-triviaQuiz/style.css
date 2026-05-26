@@ -1,0 +1,7 @@
+.q { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 1.25rem; min-height: 3rem; }
+.opts { display: grid; gap: .5rem; }
+.opt { background: var(--surface-2); color: var(--ink); border: 1px solid var(--line); padding: .75rem 1rem; border-radius: var(--radius-sm); cursor: pointer; text-align: left; font: 500 .95rem var(--sans); box-shadow: none; transition: border-color .15s, background .15s; }
+.opt:hover { border-color: var(--ink); background: var(--surface); }
+.opt.ok { background: var(--good); color: #fff; border-color: var(--good); }
+.opt.bad { background: var(--bad); color: #fff; border-color: var(--bad); }
+.prog { margin-top: 1.25rem; }

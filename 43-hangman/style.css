@@ -1,0 +1,9 @@
+canvas#g { background: var(--surface-2); }
+#word { font-family: var(--mono); font-size: 1.8rem; letter-spacing: .5rem; margin: 1.25rem 0; color: var(--ink); }
+#keys { display: grid; grid-template-columns: repeat(9, auto); gap: .3rem; justify-content: center; margin: 1rem 0; }
+#keys button { width: 36px; height: 36px; padding: 0; font: 600 .85rem var(--mono); background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
+#keys button:hover:not(:disabled) { border-color: var(--ink); }
+#keys button:disabled { opacity: .3; }
+#keys button.hit { background: var(--good); color: #fff; border-color: var(--good); }
+#keys button.miss { background: var(--bad); color: #fff; border-color: var(--bad); }
+.msg { font-family: var(--serif); font-size: 1.1rem; color: var(--accent); min-height: 1.5rem; margin: .5rem 0; }

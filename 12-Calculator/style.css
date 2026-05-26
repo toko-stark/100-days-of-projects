@@ -1,77 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #333;
-  color: #eee;
-}
-
-.container {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #444;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.display {
-  width: 100%;
-  height: 50px;
-  font-size: 24px;
-  text-align: right;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.buttons button {
-  padding: 20px;
-  font-size: 24px;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #666;
-  color: #eee;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.buttons button:hover {
-  background-color: #888;
-}
-
-.buttons button:nth-child(4n),
-.buttons button:last-child {
-  background-color: #ff9500;
-  color: #fff;
-}
-
-.buttons button:nth-child(4n):hover,
-.buttons button:last-child:hover {
-  background-color: #ffa733;
-}
-
-.--grow {
-  grid-column: span 2;
-}
+.display { font-family: var(--mono); font-size: 2rem; text-align: right; padding: 1rem; background: var(--surface-2); margin-bottom: .75rem; font-variant-numeric: tabular-nums; }
+.buttons.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+.btn { padding: 1rem; font-family: var(--serif); font-size: 1.2rem; font-weight: 600; border-radius: var(--radius-sm); cursor: pointer; box-shadow: var(--shadow-sm); }
+.btn.num { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+.btn.num:hover { background: var(--surface-2); }
+.btn.fn { background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); }
+.btn.fn:hover { background: var(--line); }
+.btn.op { background: var(--accent); color: #fff; border: 0; }
+.btn.op:hover { background: var(--accent-hover); }
+.btn.--grow { grid-column: span 2; }

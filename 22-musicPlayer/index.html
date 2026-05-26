@@ -1,60 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>22-MusicPlayer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="songs">
-        <div class="song active">
-          <h2 class="song-title">Backbeat</h2>
-          <img
-            class="song-cover"
-            src="songs/song-1/cover.png"
-            alt="Song Cover"
-          />
-          <audio
-            class="audio-player"
-            src="songs/song-1/song.mp3"
-            controls
-          ></audio>
-        </div>
-        <div class="song">
-          <h2 class="song-title">Battle Ready</h2>
-          <img
-            class="song-cover"
-            src="songs/song-2/cover.png"
-            alt="Song Cover"
-          />
-          <audio
-            class="audio-player"
-            src="songs/song-2/song.mp3"
-            controls
-          ></audio>
-        </div>
-        <div class="song">
-          <h2 class="song-title">Fresh Focus</h2>
-          <img
-            class="song-cover"
-            src="songs/song-3/cover.png"
-            alt="Song Cover"
-          />
-          <audio
-            class="audio-player"
-            src="songs/song-3/song.mp3"
-            controls
-          ></audio>
-        </div>
-      </div>
-      <div class="song-list">
-        <button data-index="0" class="song-btn active">Backbeat</button>
-        <button data-index="1" class="song-btn">Battle Ready</button>
-        <button data-index="2" class="song-btn">Fresh Focus</button>
-      </div>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Music Player · Day 022</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel center">
+  <div class="panel-head"><h1>Music Player</h1><span class="day">No. 022</span></div>
+  <div class="songs">
+    <div class="song active">
+      <h2 class="song-title">Backbeat</h2>
+      <img class="song-cover" src="songs/song-1/cover.png" alt="">
+      <audio class="audio-player" src="songs/song-1/song.mp3" controls></audio>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+    <div class="song">
+      <h2 class="song-title">Battle Ready</h2>
+      <img class="song-cover" src="songs/song-2/cover.png" alt="">
+      <audio class="audio-player" src="songs/song-2/song.mp3" controls></audio>
+    </div>
+    <div class="song">
+      <h2 class="song-title">Fresh Focus</h2>
+      <img class="song-cover" src="songs/song-3/cover.png" alt="">
+      <audio class="audio-player" src="songs/song-3/song.mp3" controls></audio>
+    </div>
+  </div>
+  <div class="song-list">
+    <button data-index="0" class="song-btn active secondary">Backbeat</button>
+    <button data-index="1" class="song-btn secondary">Battle Ready</button>
+    <button data-index="2" class="song-btn secondary">Fresh Focus</button>
+  </div>
+</section></main>
+<script src="script.js"></script></body></html>

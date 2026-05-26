@@ -1,0 +1,12 @@
+.board {
+  display: grid;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  width: min(480px, 90vw); height: min(480px, 90vw);
+  margin: 1.5rem auto 0;
+  cursor: crosshair; user-select: none;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.cell { background: #fff; }

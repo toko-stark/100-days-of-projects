@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stack & Queue · Day 054</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel lg">
+  <div class="panel-head"><h1>Stack & Queue Visualizer</h1><span class="day">No. 054</span></div>
+  <div class="controls center" style="justify-content:center">
+    <input id="val" placeholder="value" style="width:120px">
+    <button data-op="push" class="secondary">Push</button>
+    <button data-op="pop" class="ghost">Pop</button>
+    <button data-op="enqueue" class="secondary">Enqueue</button>
+    <button data-op="dequeue" class="ghost">Dequeue</button>
+  </div>
+  <div class="cols">
+    <div><h3 class="cellh">Stack <small class="muted">LIFO</small></h3><div id="stack" class="box"></div></div>
+    <div><h3 class="cellh">Queue <small class="muted">FIFO</small></h3><div id="queue" class="box"></div></div>
+  </div>
+</section></main>
+<script src="script.js"></script></body></html>

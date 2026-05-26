@@ -1,0 +1,7 @@
+.piano { position: relative; display: flex; margin: 1.5rem auto; user-select: none; justify-content: center; padding: 0 1rem; }
+.k { width: 50px; height: 200px; background: #fff; border: 1px solid var(--line-strong); color: var(--ink-2); display: flex; align-items: flex-end; justify-content: center; padding-bottom: .5rem; cursor: pointer; box-sizing: border-box; font: 500 .7rem var(--mono); letter-spacing: .08em; text-transform: uppercase; transition: background .1s; }
+.k.bl { position: absolute; width: 30px; height: 120px; background: var(--ink); color: #fff; z-index: 1; margin-left: -15px; }
+.k:hover { background: var(--surface-2); }
+.k.bl:hover { background: var(--ink-2); }
+.k.hit { background: var(--accent); color: #fff; }
+.k.bl.hit { background: var(--accent); }

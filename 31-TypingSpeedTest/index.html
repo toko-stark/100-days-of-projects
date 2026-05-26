@@ -1,48 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Test</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>⚡ Typing Speed Test</h1>
-        <div class="stats">
-            <div class="stat-box">
-                <span class="stat-label">WPM</span>
-                <span class="stat-value" id="wpm">0</span>
-            </div>
-            <div class="stat-box">
-                <span class="stat-label">Accuracy</span>
-                <span class="stat-value" id="accuracy">100%</span>
-            </div>
-            <div class="stat-box">
-                <span class="stat-label">Time</span>
-                <span class="stat-value" id="timer">60s</span>
-            </div>
-        </div>
-        
-        <div class="text-display" id="textDisplay">
-            <p id="sampleText">Click "Start Test" to begin!</p>
-        </div>
-        
-        <textarea 
-            id="userInput" 
-            placeholder="Start typing here when the test begins..."
-            disabled
-            rows="4"
-        ></textarea>
-        
-        <div class="controls">
-            <button id="startBtn" class="btn btn-primary">Start Test</button>
-            <button id="resetBtn" class="btn btn-secondary" disabled>Reset</button>
-        </div>
-        
-        <div class="result" id="result"></div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typing Speed · Day 031</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel lg">
+  <div class="panel-head"><h1>Typing Speed Test</h1><span class="day">No. 031</span></div>
+  <div class="stats">
+    <div class="stat-box"><span class="stat-label">WPM</span><span class="stat-value" id="wpm">0</span></div>
+    <div class="stat-box"><span class="stat-label">Accuracy</span><span class="stat-value" id="accuracy">100%</span></div>
+    <div class="stat-box"><span class="stat-label">Time</span><span class="stat-value" id="timer">60s</span></div>
+  </div>
+  <div class="text-display" id="textDisplay"><p id="sampleText">Click "Start Test" to begin!</p></div>
+  <textarea id="userInput" placeholder="Start typing here when the test begins..." disabled rows="4"></textarea>
+  <div class="controls" style="margin-top:.75rem">
+    <button id="startBtn" class="btn btn-primary primary">Start Test</button>
+    <button id="resetBtn" class="btn btn-secondary ghost" disabled>Reset</button>
+  </div>
+  <div class="result" id="result"></div>
+</section></main>
+<script src="script.js"></script></body></html>

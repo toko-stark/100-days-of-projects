@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One Hundred — A Coding Almanac</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,30..100;1,9..144,400..700,30..100&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="rule"></div>
+  <div class="mast-grid">
+    <div class="mast-meta">
+      <span class="mono">Vol. 01 · No. 100</span>
+      <span class="mono">Established <span id="year"></span></span>
+    </div>
+    <h1 class="logo">
+      One <em>Hundred</em>
+      <span class="sub">— a coding almanac —</span>
+    </h1>
+    <div class="mast-meta right">
+      <span class="mono">Vanilla&nbsp;JS · No frameworks</span>
+      <span class="mono">Toko · Stark</span>
+    </div>
+  </div>
+  <div class="rule"></div>
+
+  <p class="lede">
+    One hundred mini-applications, one per day, hand-typed in plain HTML, CSS,
+    and JavaScript. <em>No frameworks. No build tools. No node_modules.</em>
+    Browse the collection below — search by name, filter by kind, open any project in place.
+  </p>
+
+  <div class="toolbar">
+    <label class="search">
+      <span class="mono small">Search</span>
+      <input id="search" placeholder="try ‘snake’, ‘canvas’, ‘042’…" autocomplete="off">
+    </label>
+    <nav class="tabs" id="tabs">
+      <button data-tag="all" class="on">All <span class="count" data-count="all"></span></button>
+      <button data-tag="game">Games <span class="count" data-count="game"></span></button>
+      <button data-tag="tool">Tools <span class="count" data-count="tool"></span></button>
+      <button data-tag="visual">Visual <span class="count" data-count="visual"></span></button>
+      <button data-tag="audio">Audio <span class="count" data-count="audio"></span></button>
+      <button data-tag="utility">Utility <span class="count" data-count="utility"></span></button>
+      <button data-tag="data">Data <span class="count" data-count="data"></span></button>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="index" id="grid" aria-label="Project index"></section>
+  <p id="empty" hidden>— Nothing matches that filter. Try another term. —</p>
+</main>
+
+<footer class="colophon">
+  <div class="rule"></div>
+  <div class="colo-grid">
+    <p class="mono small">
+      Set in <em>Fraunces</em>, <em>Manrope</em>, and <em>JetBrains&nbsp;Mono</em>.
+      Printed on the open web.
+    </p>
+    <p class="mono small right">
+      <a href="https://github.com/toko-stark">@toko-stark</a> ·
+      <a href="100-portfolioShowcase/">The Showcase →</a>
+    </p>
+  </div>
+</footer>
+
+<div id="viewer" class="viewer" hidden aria-modal="true" role="dialog">
+  <div class="vbar">
+    <span class="mono small" id="vlabel">—</span>
+    <h2 id="vtitle">—</h2>
+    <span class="spacer"></span>
+    <a id="vopen" class="mono small" href="#" target="_blank" rel="noopener">Open ↗</a>
+    <button id="vclose" class="mono small" aria-label="Close">Close ✕</button>
+  </div>
+  <iframe id="vframe" src="about:blank" title="project preview"></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+.conv { display: grid; grid-template-columns: 1fr 120px; gap: .5rem; margin: .75rem 0; }
+.arrow { text-align: center; font-size: 1.4rem; color: var(--muted); margin: .5rem 0; }

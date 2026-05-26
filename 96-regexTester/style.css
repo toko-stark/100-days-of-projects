@@ -1,0 +1,9 @@
+.re { display: flex; align-items: center; gap: .25rem; margin: 1rem 0; font-family: var(--mono); }
+.slash { font-size: 1.4rem; color: var(--muted); }
+.re input { font-family: var(--mono); font-size: 1rem; padding: .5rem .75rem; flex: 1; }
+.re input.flags { flex: 0 0 80px; }
+textarea, #out { width: 100%; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; font-family: var(--mono); font-size: 14px; line-height: 1.6; box-shadow: var(--shadow-sm); }
+textarea { min-height: 120px; }
+#out { min-height: 120px; white-space: pre-wrap; margin-top: .5rem; }
+mark { background: var(--accent); color: #fff; padding: 0 3px; border-radius: 3px; }
+#info.err { color: var(--bad); }

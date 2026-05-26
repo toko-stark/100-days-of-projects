@@ -1,0 +1,5 @@
+#preview { width: 180px; height: 180px; background: var(--surface); border-radius: var(--radius); margin: 2rem auto; }
+.ctrls { display: grid; grid-template-columns: auto 1fr auto; gap: .5rem; align-items: center; margin-bottom: 1rem; font-size: .85rem; }
+.ctrls label { margin: 0; font-size: .85rem; color: var(--ink-2); }
+.ctrls span { font-family: var(--mono); font-size: .8rem; color: var(--muted); text-align: right; min-width: 50px; }
+pre { background: var(--surface-2); padding: 1rem; border-radius: var(--radius-sm); font-family: var(--mono); font-size: .8rem; overflow: auto; margin: 0 0 1rem; }

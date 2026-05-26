@@ -1,0 +1,2 @@
+#board { display: grid; grid-template: repeat(4, 80px) / repeat(4, 80px); gap: 8px; background: var(--surface-2); padding: 8px; border-radius: var(--radius); margin: 1.5rem auto; border: 1px solid var(--line); }
+.tile { background: var(--bg); border-radius: var(--radius-sm); display: grid; place-items: center; font-family: var(--serif); font-weight: 600; font-size: 1.6rem; transition: background .2s; }

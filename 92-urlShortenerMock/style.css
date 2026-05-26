@@ -1,0 +1,8 @@
+.add-row { display: flex; gap: .5rem; margin-bottom: 1rem; }
+.add-row input { flex: 1; }
+.links { max-height: 320px; overflow: auto; }
+.links li { background: var(--surface-2); padding: .65rem .85rem; border-radius: var(--radius-sm); margin: .35rem 0; border: 1px solid var(--line); }
+.short { color: var(--accent); font-family: var(--mono); cursor: pointer; font-weight: 600; }
+.short:hover { text-decoration: underline; }
+.long { font-size: .8rem; color: var(--muted); word-break: break-all; margin-top: .25rem; }
+.hits { font-family: var(--mono); font-size: .7rem; color: var(--ink-2); margin-top: .25rem; }

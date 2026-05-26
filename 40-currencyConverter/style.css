@@ -1,0 +1,17 @@
+.conv {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: .5rem;
+  align-items: center;
+}
+.result {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--accent);
+  padding: .6rem .85rem;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.arrow { text-align: center; font-size: 1.4rem; color: var(--muted); margin: .5rem 0; }

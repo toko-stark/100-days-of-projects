@@ -1,0 +1,8 @@
+.palwrap { padding: 2rem var(--gutter); min-height: 100vh; display: flex; flex-direction: column; }
+.palhead { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.palhead .day { color: var(--muted); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+.pal { flex: 1; display: flex; gap: 6px; min-height: 60vh; }
+.col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding: 1.25rem; cursor: pointer; border-radius: var(--radius); color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,.35); font-family: var(--mono); font-size: .85rem; font-weight: 600; transition: flex .3s; }
+.col:hover { flex: 1.2; }
+.lock { font-size: 1.2rem; background: rgba(255,255,255,.25); border: 0; padding: .3rem; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; margin-bottom: .5rem; box-shadow: none; }
+.lock:hover { background: rgba(255,255,255,.4); }

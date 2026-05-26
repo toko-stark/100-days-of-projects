@@ -1,0 +1,8 @@
+.recbtn { background: var(--bad); color: #fff; padding: .75rem 1.5rem; font-size: 1rem; border-radius: 999px; }
+.recbtn.rec { background: var(--good); animation: p 1s infinite; }
+@keyframes p { 50% { opacity: .6; } }
+.rectime { font-family: var(--mono); font-size: 1.5rem; margin: .75rem 0; font-variant-numeric: tabular-nums; }
+.reclist { text-align: left; margin-top: 1rem; }
+.reclist li { background: var(--surface-2); padding: .5rem; border-radius: var(--radius-sm); margin: .3rem 0; display: flex; align-items: center; gap: .5rem; }
+.reclist audio { flex: 1; }
+.reclist a { color: var(--accent); text-decoration: none; }

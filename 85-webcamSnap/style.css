@@ -1,0 +1,3 @@
+video { width: 100%; max-width: 480px; border-radius: var(--radius); background: var(--ink); display: block; margin: 0 auto 1rem; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: .5rem; margin-top: 1rem; }
+.gallery img { width: 100%; border-radius: var(--radius-sm); cursor: pointer; border: 1px solid var(--line); }

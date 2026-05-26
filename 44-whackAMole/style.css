@@ -1,0 +1,6 @@
+.grid { display: grid; grid-template: repeat(3, 90px) / repeat(3, 90px); gap: .75rem; padding: 1rem; background: var(--surface-2); border-radius: var(--radius); margin: 1.5rem auto; justify-content: center; }
+.hole { background: var(--ink); border-radius: 50%; position: relative; overflow: hidden; cursor: pointer; }
+.mole { position: absolute; inset: 12%; background: var(--accent); border-radius: 50%; transform: translateY(110%); transition: transform .15s; }
+.mole.up { transform: translateY(0); }
+.mole::before, .mole::after { content: ''; position: absolute; top: 30%; width: 8px; height: 8px; background: #fff; border-radius: 50%; }
+.mole::before { left: 25%; } .mole::after { right: 25%; }

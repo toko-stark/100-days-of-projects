@@ -1,0 +1,4 @@
+input { text-align: center; font-family: var(--serif); font-size: 1.2rem; }
+.result { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; min-height: 2.5rem; margin-top: 1.25rem; }
+.result.ok { color: var(--good); }
+.result.bad { color: var(--bad); }

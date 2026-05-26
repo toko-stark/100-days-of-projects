@@ -1,0 +1,9 @@
+#grid { display: grid; grid-template: repeat(9, 40px) / repeat(9, 40px); background: var(--line-strong); gap: 1px; padding: 2px; border-radius: var(--radius-sm); margin: 1.25rem auto; }
+.cell { background: var(--surface); display: grid; place-items: center; }
+.cell input { width: 100%; height: 100%; background: transparent; border: 0; text-align: center; color: var(--ink); font-family: var(--serif); font-size: 1.2rem; font-weight: 600; outline: none; padding: 0; box-shadow: none; border-radius: 0; }
+.cell input:focus { background: var(--accent-soft); }
+.cell.fixed input { color: var(--accent); font-weight: 700; }
+.cell.b3r { box-shadow: inset 0 -2px 0 var(--ink); }
+.cell.b3c { box-shadow: inset -2px 0 0 var(--ink); }
+.cell.b3r.b3c { box-shadow: inset -2px 0 0 var(--ink), inset 0 -2px 0 var(--ink); }
+.msg { margin-top: .75rem; min-height: 1.5rem; font-family: var(--serif); font-weight: 600; color: var(--accent); }

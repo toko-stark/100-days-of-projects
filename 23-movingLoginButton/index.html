@@ -1,42 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>23-MovingLoginButton</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="container-title">Login</h2>
-      <form action="submit">
-        <input
-          type="email"
-          name="email"
-          id="email-input"
-          class="form-input"
-          placeholder="mail@example.com"
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          id="password-input"
-          class="form-input"
-          placeholder="Password"
-          required
-        />
-        <div class="form-checkbox">
-          <input type="checkbox" name="remember" id="remember-me" />
-          <label for="remember-me">Remember me</label>
-        </div>
-
-        <p class="do-you-have-an-account">
-          Dont have an account yet? <a href="#">Sign Up!</a>
-        </p>
-        <button type="submit" class="login-button">Login</button>
-      </form>
-    </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moving Button · Day 023</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel">
+  <div class="panel-head"><h1>Login</h1><span class="day">No. 023</span></div>
+  <form>
+    <label>Email<input type="email" id="email-input" class="form-input" placeholder="mail@example.com" required></label>
+    <label>Password<input type="password" id="password-input" class="form-input" placeholder="Password" required></label>
+    <label class="cb"><input type="checkbox" id="remember-me">Remember me</label>
+    <p class="muted small" style="margin:.5rem 0">Don't have an account yet? <a href="#">Sign Up</a></p>
+    <button type="submit" class="login-button primary" style="width:100%">Login</button>
+  </form>
+</section></main>
+<script src="script.js"></script></body></html>

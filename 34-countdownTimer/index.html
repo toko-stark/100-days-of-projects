@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Countdown · Day 034</title>
+<link rel="stylesheet" href="../theme.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="back" href="../">← Hub</a>
+<main class="app">
+  <section class="panel">
+    <div class="panel-head"><h1>Countdown</h1><span class="day">No. 034</span></div>
+    <div class="row center" style="justify-content:center">
+      <label class="inline">Min <input type="number" id="m" value="5" min="0"></label>
+      <label class="inline">Sec <input type="number" id="s" value="0" min="0" max="59"></label>
+    </div>
+    <div id="d" class="time">00:00</div>
+    <div class="controls center">
+      <button id="go" class="primary">Start</button>
+      <button id="rs" class="ghost">Reset</button>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

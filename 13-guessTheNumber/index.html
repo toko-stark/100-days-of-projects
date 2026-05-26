@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
-  </head>
-  <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guess The Number · Day 013</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel center">
+  <div class="panel-head"><h1>Guess My Number</h1><span class="day">No. 013</span></div>
+  <p class="between muted">Between 1 and 20</p>
+  <div class="number">?</div>
+  <div class="row" style="justify-content:center;gap:.5rem">
+    <input type="number" class="guess" style="max-width:120px;text-align:center;font-family:var(--serif);font-size:1.3rem">
+    <button class="btn check primary">Check</button>
+  </div>
+  <p class="message" style="margin-top:1rem;font-family:var(--serif);font-style:italic;color:var(--accent);min-height:1.5rem">Start guessing...</p>
+  <div class="scores mono">
+    <span>Score <b class="score">20</b></span>
+    <span>Highscore <b class="highscore">0</b></span>
+  </div>
+  <button class="btn again ghost" style="margin-top:.75rem">Again</button>
+</section></main>
+<script src="script.js"></script></body></html>

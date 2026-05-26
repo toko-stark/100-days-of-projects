@@ -1,0 +1,11 @@
+.qr {
+  margin: 1.5rem auto 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  display: inline-block;
+  text-align: center;
+  min-height: 220px;
+}
+.panel { text-align: center; }

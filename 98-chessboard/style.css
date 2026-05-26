@@ -1,0 +1,5 @@
+#board { display: grid; grid-template: repeat(8, 56px) / repeat(8, 56px); box-shadow: var(--shadow-md); border-radius: var(--radius-sm); overflow: hidden; margin: 1rem auto; border: 1px solid var(--line); }
+.sq { display: grid; place-items: center; font-size: 2.2rem; cursor: pointer; user-select: none; }
+.sq.l { background: #f5e9d4; }
+.sq.d { background: #b58863; }
+.sq.sel { box-shadow: inset 0 0 0 4px var(--accent); }

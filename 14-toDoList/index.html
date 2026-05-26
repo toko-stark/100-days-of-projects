@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>14-ToDoList</title>
-  </head>
-  <body>
-    <h1>ToDoList</h1>
-    <div class="container">
-      <h2 class="container-title">Active Tasks</h2>
-      <div class="input-table">
-        <input type="text" id="taskInput" placeholder="Enter a new task" />
-        <button id="addTaskButton">Add Task</button>
-      </div>
-      <ul id="taskList">
-        <li class="taskItem">
-          Sample Task
-          <button class="deleteButton">Delete</button>
-        </li>
-      </ul>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>To Do List · Day 014</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel">
+  <div class="panel-head"><h1>To Do List</h1><span class="day">No. 014</span></div>
+  <div class="input-table">
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button id="addTaskButton" class="primary">Add</button>
+  </div>
+  <ul id="taskList" class="plain tasklist"></ul>
+</section></main>
+<script src="script.js"></script></body></html>

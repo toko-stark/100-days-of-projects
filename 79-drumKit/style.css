@@ -1,0 +1,6 @@
+.pads { display: grid; grid-template-columns: repeat(4, 88px); gap: .6rem; margin: 1.25rem auto; justify-content: center; }
+.pad { aspect-ratio: 1; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; place-items: center; cursor: pointer; transition: .1s; user-select: none; box-shadow: var(--shadow-sm); }
+.pad > div > div:first-child { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; }
+.pad > div > div:last-child { font-family: var(--mono); font-size: .6rem; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; margin-top: .25rem; }
+.pad.hit { background: var(--accent); transform: scale(.95); box-shadow: 0 0 20px var(--accent-soft); }
+.pad.hit > div > div { color: #fff !important; }

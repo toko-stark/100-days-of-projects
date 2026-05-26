@@ -1,0 +1,6 @@
+.bigpick { width: 100%; height: 50px; }
+.swatch { width: 100%; height: 120px; border-radius: var(--radius); margin: 1rem 0; border: 1px solid var(--line); }
+.codes { font-family: var(--mono); display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1rem; }
+.codes div { display: flex; justify-content: space-between; padding: .5rem .75rem; background: var(--surface-2); border-radius: var(--radius-sm); }
+.codes span { color: var(--muted); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.codes b { color: var(--ink); font-weight: 600; }

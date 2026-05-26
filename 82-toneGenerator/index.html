@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tone Generator · Day 082</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel">
+  <div class="panel-head"><h1>Tone Generator</h1><span class="day">No. 082</span></div>
+  <label>Frequency · <span id="fv" class="mono">440</span> Hz<input type="range" id="f" min="20" max="2000" value="440"></label>
+  <label>Volume<input type="range" id="v" min="0" max="100" value="30"></label>
+  <label>Waveform<select id="w"><option>sine</option><option>square</option><option>triangle</option><option>sawtooth</option></select></label>
+  <button id="go" class="primary" style="width:100%;margin-top:.5rem">▶ Play</button>
+</section></main>
+<script src="script.js"></script></body></html>

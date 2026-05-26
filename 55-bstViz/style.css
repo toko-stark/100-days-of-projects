@@ -1,0 +1,4 @@
+canvas { display: block; margin: 1rem 0; width: 100%; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.panel-head .day { color: var(--muted); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+#trav { color: var(--accent); margin-top: 1rem; }

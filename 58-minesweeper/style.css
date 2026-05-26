@@ -1,0 +1,8 @@
+#board { display: inline-grid; gap: 1px; background: var(--line-strong); padding: 1px; border-radius: var(--radius-sm); margin: 1.25rem auto; }
+.cell { width: 30px; height: 30px; background: var(--surface-2); display: grid; place-items: center; cursor: pointer; font-family: var(--mono); font-weight: 700; font-size: .9rem; user-select: none; transition: background .12s; }
+.cell:hover { background: var(--surface); }
+.cell.r { background: var(--surface); cursor: default; }
+.cell.b { background: var(--bad); color: #fff; }
+.cell.f { background: var(--warn); color: #fff; }
+.c1 { color: #2563eb; } .c2 { color: #16a34a; } .c3 { color: #dc2626; }
+.c4 { color: #7c3aed; } .c5 { color: #ca8a04; }

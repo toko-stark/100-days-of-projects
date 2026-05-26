@@ -1,0 +1,5 @@
+.scram { font-family: var(--mono); font-size: 2.4rem; letter-spacing: .3rem; color: var(--accent); margin: 1.25rem 0; }
+.msg { min-height: 1.5rem; font-weight: 600; margin: .5rem 0; font-family: var(--serif); }
+.msg.ok { color: var(--good); }
+.msg.bad { color: var(--bad); }
+input { text-align: center; }

@@ -1,37 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="clock-wrap">
-      <section class="clock" aria-live="polite">
-        <div class="time" id="time" aria-label="Current time">
-          <span id="hours">12</span>
-          <span class="colon">:</span>
-          <span id="minutes">00</span>
-          <span class="colon">:</span>
-          <span id="seconds">00</span>
-          <span id="ampm" class="ampm">AM</span>
-        </div>
-
-        <div class="date" id="date" aria-label="Current date">
-          Monday, January 1, 2000
-        </div>
-
-        <div class="controls">
-          <label class="switch">
-            <input type="checkbox" id="formatToggle" />
-            <span class="slider"></span>
-          </label>
-          <span class="label">24-hour</span>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js" defer></script>
-  </body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clock · Day 006</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel center">
+  <div class="panel-head"><h1>Clock</h1><span class="day">No. 006</span></div>
+  <div class="time" id="time" aria-label="Current time">
+    <span id="hours">12</span><span class="colon">:</span><span id="minutes">00</span><span class="colon">:</span><span id="seconds">00</span>
+    <span id="ampm" class="ampm">AM</span>
+  </div>
+  <div class="date" id="date">Monday, January 1, 2000</div>
+  <label class="switch">
+    <input type="checkbox" id="formatToggle">
+    <span>24-hour format</span>
+  </label>
+</section></main>
+<script src="script.js" defer></script></body></html>

@@ -1,0 +1,2 @@
+#ball { width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(at 30% 30%, #3f3f46, #18181b); margin: 1.5rem auto; display: grid; place-items: center; box-shadow: inset -20px -30px 60px rgba(0,0,0,.5), var(--shadow-lg); }
+#ans { background: var(--accent); color: #fff; width: 130px; height: 130px; border-radius: 50%; display: grid; place-items: center; text-align: center; padding: 1rem; font-family: var(--serif); font-weight: 600; font-size: .9rem; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); transition: opacity .3s; }

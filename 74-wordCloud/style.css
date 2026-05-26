@@ -1,0 +1,6 @@
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.panel-head .day { color: var(--muted); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+textarea { width: 100%; min-height: 120px; }
+.cloud { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; min-height: 240px; display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; align-items: center; margin-top: 1rem; box-shadow: var(--shadow-sm); }
+.word { font-family: var(--serif); font-weight: 600; padding: .2rem .4rem; transition: transform .2s; cursor: default; }
+.word:hover { transform: scale(1.1); }

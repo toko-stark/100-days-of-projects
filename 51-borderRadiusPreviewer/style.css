@@ -1,0 +1,5 @@
+#box { width: 240px; height: 240px; background: linear-gradient(135deg, var(--accent), var(--ink)); margin: 1.5rem auto; }
+.ctrls { display: grid; grid-template-columns: auto 1fr auto; gap: .5rem; align-items: center; margin-bottom: 1rem; }
+.ctrls label { margin: 0; font-size: .85rem; color: var(--ink-2); }
+.ctrls span { font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+pre { background: var(--surface-2); padding: 1rem; border-radius: var(--radius-sm); font-family: var(--mono); font-size: .85rem; margin: 0 0 1rem; }

@@ -1,0 +1,22 @@
+.b {
+  display: grid;
+  grid-template: repeat(3, 90px) / repeat(3, 90px);
+  gap: 6px;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+.cell {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.cell:hover { background: var(--surface); }
+.cell.x { color: var(--accent); }
+.cell.o { color: var(--ink); }

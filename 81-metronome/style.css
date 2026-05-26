@@ -1,0 +1,6 @@
+.bpm { font-family: var(--serif); font-size: 4rem; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.dots { display: flex; gap: .5rem; justify-content: center; margin: 1.25rem 0; }
+.dot { width: 18px; height: 18px; border-radius: 50%; background: var(--line); transition: .1s; }
+.dot.on { background: var(--accent); box-shadow: 0 0 14px var(--accent-soft); }
+.dot.acc.on { background: var(--ink); box-shadow: 0 0 14px rgba(0,0,0,.2); }
+label.inline { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; margin: 0; }

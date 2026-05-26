@@ -1,0 +1,2 @@
+.setup { font-family: var(--serif); font-size: 1.2rem; margin: 1rem 0; line-height: 1.5; }
+.punch { font-family: var(--serif); font-style: italic; font-size: 1.3rem; color: var(--accent); font-weight: 600; min-height: 2rem; margin-bottom: 1rem; line-height: 1.4; }

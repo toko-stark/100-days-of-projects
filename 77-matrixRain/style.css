@@ -1,0 +1,4 @@
+body { margin: 0; background: #000; overflow: hidden; }
+canvas { display: block; }
+.back.back-dark { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
+.back.back-dark:hover { color: var(--accent); border-color: var(--accent); background: rgba(255,255,255,.12); }

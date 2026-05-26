@@ -1,0 +1,26 @@
+.time {
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 144;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+  margin: 1.5rem 0;
+}
+.laps {
+  max-height: 200px;
+  overflow: auto;
+  margin: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
+}
+.laps li {
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}

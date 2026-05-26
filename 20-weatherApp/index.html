@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>20-WeatherApp</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to the Weather App</h1>
-      <p>Get the latest weather updates for your location.</p>
-      <input
-        type="text"
-        name="location"
-        id="location"
-        placeholder="Enter location"
-      />
-      <button id="getWeatherBtn">Get Weather</button>
-    </div>
-
-    <div class="box hidden">
-      <h2>Weather Details</h2>
-      <div class="informations">
-        <p id="weatherInfo">Berlin; 14C; Windy</p>
-      </div>
-      <button id="closeBtn">Close</button>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather · Day 020</title>
+<link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="style.css"></head>
+<body><a class="back" href="../">← Hub</a>
+<main class="app"><section class="panel">
+  <div class="panel-head"><h1>Weather</h1><span class="day">No. 020</span></div>
+  <p class="muted">Get the latest weather updates for your location.</p>
+  <input type="text" id="location" placeholder="Enter location">
+  <button id="getWeatherBtn" class="primary" style="width:100%;margin-top:.5rem">Get Weather</button>
+  <div class="box hidden">
+    <h3 class="serif">Weather details</h3>
+    <p id="weatherInfo">—</p>
+    <button id="closeBtn" class="ghost">Close</button>
+  </div>
+</section></main>
+<script src="script.js"></script></body></html>

@@ -1,0 +1,4 @@
+#preview { height: 220px; border-radius: var(--radius); margin-bottom: 1rem; }
+.ctrl { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+.ctrl label.inline { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; margin: 0; flex: 1; }
+pre { background: var(--surface-2); padding: 1rem; border-radius: var(--radius-sm); font-family: var(--mono); font-size: .85rem; overflow: auto; margin: 0 0 1rem; }
